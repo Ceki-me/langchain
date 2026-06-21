@@ -29,8 +29,8 @@ dependencies = [
 
 [project.urls]
 homepage = "https://ceki.me"
-repository = "https://github.com/Ceki-me/ceki-langchain"
-issues = "https://github.com/Ceki-me/ceki-langchain/issues"
+repository = "https://github.com/Ceki-me/langchain"
+issues = "https://github.com/Ceki-me/langchain/issues"
 
 [project.optional-dependencies]
 test = [

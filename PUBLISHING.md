@@ -2,9 +2,9 @@
 
 This monorepo ships two packages. Both are MIT-licensed and published manually for now.
 
-## TypeScript: `@langchain/ceki` → npm
+## TypeScript: `langchain-ceki` → npm
 
-Requires: npm Automation token (`npm_...`) with publish access to `@langchain/ceki`. **Automation** tokens bypass 2FA — do not use a Classic Publish or Granular token for CI.
+Requires: npm Automation token (`npm_...`) with publish access to `langchain-ceki`. **Automation** tokens bypass 2FA — do not use a Classic Publish or Granular token for CI.
 
 ```bash
 cd packages/ts
@@ -16,7 +16,7 @@ npm run test
 NODE_OPTIONS="--dns-result-order=ipv4first" npm publish --access public
 ```
 
-When the `Ceki-me/ceki-langchain` GitHub repo is created and the `NPM_TOKEN` secret is set, pushing a release tag triggers `.github/workflows/publish.yml` which performs the same publish in CI.
+When the `Ceki-me/langchain` GitHub repo is created and the `NPM_TOKEN` secret is set, pushing a release tag triggers `.github/workflows/publish.yml` which performs the same publish in CI.
 
 ## Python: `langchain-ceki` → PyPI
 
@@ -38,4 +38,4 @@ python -m twine upload dist/*
 - [ ] Leak check: `grep -rniE "clawapi|clawed|ittribe|/home/node|codename" .` — no hits
 - [ ] Tag `vX.Y.Z` in git, push tag
 - [ ] Create GitHub Release — the publish workflow runs on `release: published`
-- [ ] Verify on the registry: `npm view @langchain/ceki@X.Y.Z`, `pip index versions langchain-ceki`
+- [ ] Verify on the registry: `npm view langchain-ceki@X.Y.Z`, `pip index versions langchain-ceki`
