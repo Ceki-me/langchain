@@ -1,0 +1,31 @@
+{
+  "name": "@ceki/langchain",
+  "version": "0.1.0",
+  "description": "Reserved namespace for langchain-ceki — install `langchain-ceki` for the real package.",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
+  "keywords": ["langchain", "ceki", "wrapper"],
+  "author": "iWedmak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ceki-me/langchain.git",
+    "directory": "packages/ts-squat"
+  },
+  "homepage": "https://ceki.me",
+  "bugs": "https://github.com/Ceki-me/langchain/issues",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "langchain-ceki": "^0.1.0"
+  }
+}
